@@ -21,7 +21,7 @@ A continuación  el programa calculará la media guardando el porcentaje, una ve
  - 75% = Nivel medio
  - mayor al 50% = Nivel Bajo
  - menor al 50% = Fuera del nivel admitido
- - 
+
 # Ejercicios Básicos - Ejercicio 17
 En este ejercicio nos piden que escribamos por pantalla una fecha que es comprobada, y posteriormente nos dirá cuantos días tiene ese mes y si el año introducido es bisiesto o no.
 
