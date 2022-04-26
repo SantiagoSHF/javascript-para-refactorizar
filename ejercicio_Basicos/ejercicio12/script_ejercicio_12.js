@@ -11,7 +11,7 @@ while(w > 31 || w < 1)
 mes=parseInt(prompt("Introduce un mes"));
 while(m > 12 || m < 1)
 {
-    mes=parseInt(prompt("Introduce un mes correcto"));
+    m=parseInt(prompt("Introduce un mes correcto"));
 }
 
 //introducir año
