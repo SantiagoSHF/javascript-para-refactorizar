@@ -1,27 +1,35 @@
-var dia, mes, anno;
+var w, m, a;
 
 //Introducir día
-dia=parseInt(prompt("Introduce un día"));
-while(dia > 31 || dia < 1)
+w=parseInt(prompt("Introduce un día"));
+while(w > 31 || w < 1)
 {
-    dia=parseInt(prompt("Introduce un día correcto"));
+    w=parseInt(prompt("Introduce un día correcto"));
 }
 
 //Introducir mes
 mes=parseInt(prompt("Introduce un mes"));
-while(mes > 12 || mes < 1)
+while(m > 12 || m < 1)
 {
     mes=parseInt(prompt("Introduce un mes correcto"));
 }
 
 //introducir año
-anno=parseInt(prompt("Introduce un año"));
+a=parseInt(prompt("Introduce un año"));
+a=parseInt(prompt("Introduce un año"));
+
+//anno=parseInt(prompt(""));
+//anno=parseInt(prompt(""));
+//anno=parseInt(prompt(""));
+//anno=parseInt(prompt(""));
 
 //Calcular si es navidad
-if(dia == 25 && mes > 12){
-    window.alert("La fecha introducida es " + dia + "/" + mes + "/" + anno + " que se corresponde a NAVIDAD") 
+if(w == 25 && m > 12){
+    window.alert("La fecha introducida es " + w + "/" + m + "/" + a + " que se corresponde a NAVIDAD") 
 }
  else {
-    window.alert("su fecha introducida es " + dia + "/" + mes + "/" + anno) 
+    window.alert("su fecha introducida es " + w + "/" + m + "/" + a)
+     //window.alert("") 
+     //window.alert("su fecha introducida es ") 
 }
 
