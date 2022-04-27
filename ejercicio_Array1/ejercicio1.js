@@ -2,70 +2,51 @@ const $TEXTO = document.getElementById('text')
 const $RESULTADO = document.getElementById('resultado')
 
 function cargaArrayEjemplo () {
-  // Carga un array de ejemplo en el html cuando le das al botón Cargar Ejemplo
   $TEXTO.value = '5,99,43,12,37'
 }
 
 function calcular () {
-  const a = $TEXTO.value.split(/,/)
-  let s = 0
-  let md
-  let my = -Infinity
-  let m = +Infinity
-  let j = 0
+  const valores = $TEXTO.value.split(/,/)
+  const numeros = valores.map(a => parseInt(a))
 
-  // Suma cada valor del array
-  for (i = 0; i < a.length; i++) {
-    if (i == j) {
-      s = parseInt(a[i]) + s
-    }
-    j++
+  const resumen = {
+    suma: 0,
+    maximo: Number.MIN_VALUE,
+    minimo: Number.MAX_VALUE
   }
 
-  // Calcula la md del array
-  md = s / a.length
+  const resultado = numeros.reduce(reducer, resumen)
+  resultado.media = resultado.suma / valores.length
 
-  // Calcula el mayor
-  for (i = 0; i < a.length; i++) {
-    if (parseInt(a[i]) > my) {
-      my = a[i]
-    }
-  }
-
-  // Calcula el menor
-  for (i = 0; i < a.length; i++) {
-    if (parseInt(a[i]) < m) {
-      m = a[i]
-    }
-  }
-
-  // Pruebas antiguas
-  // for(i = 0; i < a.length; i++){
-  //    if(parseInt(a[i]) > wa){
-  //        wa = a[i]
-  //    }
-  // }
-  // for(i = 0; i < a.length; i++){
-  //    if(parseInt(a[i]) == iwa){
-  //        iwa = a[i]
-  //    }
-  // }
-  // for(i = 0; i < a.length; i++){
-  //    if(parseInt(a[i]) < m){
-  //        m = a[i]
-  //    }
-  // }
-  // for(i = 0; i < a.length; i++){
-  //    if(parseInt(a[i]) <= menoiwa){
-  //        menoiwa = a[i]
-  //    }
-  // }
-
-  $RESULTADO.innerHTML = 'La suma es: ' + s + '<br>' +
-'La media es: ' + md + '<br>' +
-'El mayor es: ' + my + '<br>' +
-'El menor es: ' + m + '<br>'
+  imprime(resultado)
 }
+
 function reiniciar () {
   location.reload()
+}
+
+function reducer ({ suma, maximo, minimo }, actual) {
+  return {
+    suma: suma + actual,
+    maximo: calculaMaximo(maximo, actual),
+    minimo: calculaMinimo(minimo, actual)
+  }
+}
+
+function calculaMinimo (a, b) {
+  return a > b ? b : a
+}
+
+function calculaMaximo (a, b) {
+  return a > b ? a : b
+}
+
+function imprime ({ suma, maximo, minimo, media }) {
+  $RESULTADO.innerText =
+    `
+      La suma es: ${suma}.
+      La media es: ${media}.
+      El mayor es: ${maximo}.
+      El menor es: ${minimo}.
+    `
 }
