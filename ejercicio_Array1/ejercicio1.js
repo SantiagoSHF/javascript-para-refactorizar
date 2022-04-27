@@ -1,10 +1,13 @@
+const $TEXTO = document.getElementById('text')
+const $RESULTADO = document.getElementById('resultado')
+
 function random () {
   // Carga un array de ejemplo en el html cuando le das al botón Cargar Ejemplo
-  document.getElementById('text').value = '5,99,43,12,37'
+  $TEXTO.value = '5,99,43,12,37'
 }
 
 function aXa () {
-  const a = document.getElementById('text').value.split(/,/)
+  const a = $TEXTO.value.split(/,/)
   let s = 0
   let md
   let my = -Infinity
@@ -58,7 +61,7 @@ function aXa () {
   //    }
   // }
 
-  document.getElementById('resultado').innerHTML = 'La suma es: ' + s + '<br>' +
+  $RESULTADO.innerHTML = 'La suma es: ' + s + '<br>' +
 'La media es: ' + md + '<br>' +
 'El mayor es: ' + my + '<br>' +
 'El menor es: ' + m + '<br>'
