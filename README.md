@@ -8,6 +8,10 @@ Entonces cuando le demos a calcular, nos escribe en el documento html:
  - La media de los valores del array
  - El valor menor y mayor del array
 
+Modificado las variables : tanto sus nombres como el tipo.
+El código comentado ha sido eliminado.
+Creada la variable i, que se usaba sin estar definida 
+
 # Ejercicios Básicos - Ejercicio 12
 En este ejercicio nos piden que escribamos por pantalla una fecha que es comprobada, y posteriormente nos comprueba si la fecha que hemos introducido se corresponde con la navidad.
 
