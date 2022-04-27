@@ -11,6 +11,12 @@ Entonces cuando le demos a calcular, nos escribe en el documento html:
 # Ejercicios Básicos - Ejercicio 12
 En este ejercicio nos piden que escribamos por pantalla una fecha que es comprobada, y posteriormente nos comprueba si la fecha que hemos introducido se corresponde con la navidad.
 
+# EJERCICIO MODIFICADO:
+  - Alta cantidad de comentarios que no tienen necesidad de estar ahí
+  - Variables mal escritas o que no se han usado
+  - Comprobaciones incorrectas
+  - Líneas de comandos repetidas
+
 # Ejercicios Básicos - Ejercicio 14
 En este ejercicio nos pide que escribamos los resultados de examen siguiendo el siguiente formato:
   1- Nombre
