@@ -1,12 +1,12 @@
 const $TEXTO = document.getElementById('text')
 const $RESULTADO = document.getElementById('resultado')
 
-function random () {
+function cargaArrayEjemplo () {
   // Carga un array de ejemplo en el html cuando le das al botón Cargar Ejemplo
   $TEXTO.value = '5,99,43,12,37'
 }
 
-function aXa () {
+function calcular () {
   const a = $TEXTO.value.split(/,/)
   let s = 0
   let md
@@ -66,6 +66,6 @@ function aXa () {
 'El mayor es: ' + my + '<br>' +
 'El menor es: ' + m + '<br>'
 }
-function rpg () {
+function reiniciar () {
   location.reload()
 }
