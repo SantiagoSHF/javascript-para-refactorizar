@@ -16,12 +16,17 @@ while(m > 12 || m < 1)
 
 //introducir año
 a=parseInt(prompt("Introduce un año"));
+while(a < 0)
+{
+    a=parseInt(prompt("Introduce un año correcto"));
+
+}
 
 //Calcular si es navidad
 if(w == 25 && m == 12){
     window.alert("La fecha introducida es " + w + "/" + m + "/" + a + " que se corresponde a NAVIDAD") 
 }
- else {
+else {
     window.alert("su fecha introducida es " + w + "/" + m + "/" + a)
 }
 
