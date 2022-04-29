@@ -1,39 +1,38 @@
-var n,p, c, r;
-n=prompt("Introduce el nombre del aspirante" );
-p=parseInt(prompt("Introduce el número de preguntas" ));
-c=parseInt(prompt("Introduce el número de respuestas correctas" ));
+
+
+var nombre=prompt("Introduce el nombre del aspirante" );
+var preguntas =parseInt(prompt("Introduce el número de preguntas" ));
+var correctas=parseInt(prompt("Introduce el número de respuestas correctas" ));
 // Escribe el nombre
-document.write("Nombre: " + n + "<br>");
+document.write("Nombre: " + nombre + "<br>");
 // Escribe el total de preguntas
-document.write("Total de preguntas: " + p + "<br>");
+document.write("Total de preguntas: " + preguntas + "<br>");
 // Escribe las preguntas correctas
-document.write("Preguntas correctas: " + c + "<br>");
+document.write("Preguntas correctas: " + correctas + "<br>");
 // Calcula la media
-r = (c * 100) / p;
+var media  = (correctas * 100) / preguntas;
 // Pruebas que salieron mal
 //r = (c * n * r) / p;
 //r = (c * 10000) / p;
 //r = (c * 1001) / p;
 //r = (c * 2000) / p;
-if (r >= 90)
+if (media >= 90)
 {
     document.write("Nivel por porcentaje: Nivel Superior");
 }
 else {
-    if(r >= 75)
+    if(media >= 75)
     {
         document.write("Nivel por porcentaje: Nivel medio");
     }
     else {
-        if (r >= 50)
+        if (media >= 50)
         {
             document.write("Nivel por porcentaje: Nivel Bajo");
         }
         else {
-            if (r < 50)
-            {
-                document.write("Nivel por porcentaje: Fuera de nivel");
-            }
+            
+                document.write("Nivel por porcentaje: Fuera de nivel");     
         }
     }
 }
