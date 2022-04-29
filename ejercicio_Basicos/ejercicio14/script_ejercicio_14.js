@@ -16,17 +16,6 @@ document.write("Preguntas correctas: " + correctas + "<br>");
 // Calcula la media
 media = (correctas * 100) / preguntas;
 
-var nombre=prompt("Introduce el nombre del aspirante" );
-var preguntas =parseInt(prompt("Introduce el número de preguntas" ));
-var correctas=parseInt(prompt("Introduce el número de respuestas correctas" ));
-// Escribe el nombre
-document.write("Nombre: " + nombre + "<br>");
-// Escribe el total de preguntas
-document.write("Total de preguntas: " + preguntas + "<br>");
-// Escribe las preguntas correctas
-document.write("Preguntas correctas: " + correctas + "<br>");
-// Calcula la media
-var media  = (correctas * 100) / preguntas;
 // Pruebas que salieron mal
 //r = (c * n * r) / p;
 //r = (c * 10000) / p;
