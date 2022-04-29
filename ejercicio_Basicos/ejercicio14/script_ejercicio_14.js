@@ -16,9 +16,6 @@ document.write("Preguntas correctas: " + correctas + "<br>");
 // Calcula la media
 media = (correctas * 100) / preguntas;
 
-
-
-
 var nombre=prompt("Introduce el nombre del aspirante" );
 var preguntas =parseInt(prompt("Introduce el número de preguntas" ));
 var correctas=parseInt(prompt("Introduce el número de respuestas correctas" ));
@@ -52,11 +49,7 @@ else {
         }
 
         else {        
-                document.write("Nivel por porcentaje: Fuera de nivel");
-    
-        else {
-            
-                document.write("Nivel por porcentaje: Fuera de nivel");     
+                document.write("Nivel por porcentaje: Fuera de nivel"); 
 
         }
     }
