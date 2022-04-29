@@ -16,7 +16,7 @@ document.write("Preguntas correctas: " + correctas + "<br>");
 // Calcula la media
 media = (correctas * 100) / preguntas;
 
-=======
+
 
 
 var nombre=prompt("Introduce el nombre del aspirante" );
